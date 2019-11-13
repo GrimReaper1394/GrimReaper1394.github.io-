@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Shopping Cart</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="https://kit.fontawesome.com/45af812085.js"></script>
+        <link rel="stylesheet" type="text/css" href="catalogue style.css">
+        <link rel="stylesheet" type="text/css" href="global.css">
+        <style type="text/css">
+        .card {
+            width: 500px;
+            height: 600px;
+            text-align: center;
+            float: left;
+        }
+
+        #CloneItem {
+            display: none;
+        }
+
+        #navbarNavAltMarkup {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        dialog .options {
+            display: flex;
+            flex-direction: column;
+        }
+        </style>
+    </head>
+
+    <body>
+        <!--creating a navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">The Tech Geeks</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="Home Page.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="Catalogue.html">The Catalogue</a>
+                    <a class="nav-item nav-link" href="About Us.html">About Us</a>
+                    <a class="nav-item nav-link" href="Contact Us.html">Contact Us</a>
+                    <a class="nav-item nav-link" href="Cart.html">Cart</a>
+                </div>
+                <div class="CartTotalAndCheckout">
+                    <a class="checkout" href="">Checkout</a>
+                    <span class="total"></span>
+                </div>
+            </div>
+        </nav>
+
+        <div class="jumbotron text-center">
+            <h1>Za Cart</h1>
+        </div>
+
+        <div class="content-fluid">
+            <div class="card" id="CloneItem">
+                <div class="card-body">
+                    <h3 class="name">Acer Predator Helios 300</h3>
+                    <h3 class="price">R 0.00</h3>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-light">
+                        <img class="img-fluid" src="images/predator-helio300.png">
+                    </button>
+                    <button class="RemoveFromCart">Remove from cart</button>
+                </div>
+            </div>
+        </div>
+
+        <dialog>
+            <div class="options">
+                <div class="coupon">
+                    <input type="text" id="coupon">
+                    <button>Apply Coupon</button>
+                </div>
+                <label for="delivery"><input type="radio" name="delivery" id="delivery" checked>Delivery</label>
+                <div class="hidden">
+                    <input type="radio" name="deliveryTo" id="flight" checked><label for="flight">Flight</label>
+                    <input type="radio" name="deliveryTo" id="drive"><label for="drive">Road courier</label>
+                </div>
+                <label for="pickup"><input type="radio" name="delivery" id="pickup">Pickup</label>
+            </div>
+            <div class="total">
+
+                <button class="ConfirmOrder">Confirm Order</button>
+
+            </div>
+        </dialog>
+
+        <script type="text/javascript" src="catalogue.js"></script>
+        <script type="text/javascript">
+        loadCart()
+        </script>
+
+
+    </body>
+
+</html>

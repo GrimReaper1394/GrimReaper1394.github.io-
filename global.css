@@ -1,0 +1,22 @@
+img {
+    padding: 20px;
+    border: transparent;
+}
+
+button {
+    padding: 20px;
+}
+
+body {
+    padding: center;
+}
+
+img : hover {
+    border-color: rgba(50, 115, 220, 0.3);
+}
+
+ul {
+    list-style: none;
+    padding: 20px;
+    border: solid;
+    border-spacing: 10px;

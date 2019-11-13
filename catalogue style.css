@@ -1,0 +1,82 @@
+body {
+    background-image: url("images/background.jpg");
+    background-size: cover;
+}
+
+/*formating the image*/
+img {
+    border-radius: 10%
+}
+
+/*formating all general modal button triggers*/
+/*#trigger {
+    height: 200px;
+    width: auto;
+    padding: 20px;
+}*/
+
+
+/*formatting shopping cart image*/
+.shoppingCart {
+    width: 40px;
+    height: 60px;
+}
+
+/*body formating*/
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*formatting the rows to have consistent*/
+.row {
+    padding: 15px;
+}
+
+/*formating the primary close button of the modal*/
+.close {
+    height: 20px;
+    width: 40px;
+}
+
+/*formatting shopping cart button also messes up image*/
+/*formatting the secondary close button of the modal*/
+.AddToCart, .close2nd {
+    padding: 0;
+}
+
+/*formatting the card*/
+.card:hover {
+    background-color: grey;
+}
+
+
+/* table hover on perks*/
+.table-hover:hover {
+    height: 250px;
+    width: 250px;
+}
+
+/* animating the background */
+.container-fluid {
+    background: gray url(images/background.jpg) repeat 0 0;
+    width: auto;
+    margin: 0;
+    text-align: center;
+    height: auto;
+    padding-top: 120px;
+    box-sizing: border-box;
+    -webkit-animation: slide 20s linear infinite;
+}
+
+
+@-webkit-keyframes slide {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -400px 0;
+    }
+}

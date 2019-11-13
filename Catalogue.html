@@ -1,0 +1,529 @@
+`<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>The Cataloque</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="https://kit.fontawesome.com/45af812085.js"></script>
+        <link rel="stylesheet" type="text/css" href="catalogue style.css">
+        <link rel="stylesheet" type="text/css" href="global.css">
+    </head>
+
+    <body>
+        <!--creating a navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">The Tech Geeks</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="Home Page.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="Catalogue.html">The Catalogue</a>
+                    <a class="nav-item nav-link" href="About Us.html">About Us</a>
+                    <a class="nav-item nav-link" href="Contact Us.html">Contact Us</a>
+                    <a class="nav-item nav-link" href="Cart.html">Cart</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="jumbotron text-center">
+            <h1>The Cataloque</h1>
+        </div>
+
+        <!--Grid thing-->
+        <div class="container-fluid">
+            <!--Row one-->
+            <div class="row">
+                <!--Column one-->
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <!-- creating a card -->
+                    <div class="card">
+                        <div class="card-body">
+                            <h>Acer Predator Helios 300</h>
+                            <!-- Button trigger modal -->
+                            <button id="trigger" type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#img1">
+                                <img class="img-fluid img-thumbnail" src="images/predator-helio300.png">
+                            </button>
+                            <button class="AddToCart">Add To Cart</button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="img1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title" id="exampleModalLabel">Acer Predator Helios 300</h4>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img class="img-fluid" src="images/predator-helio300.png" class="img-thumbnail">
+                                            <ul>
+                                                <li>CPU: 2.2GHz Intel Core i7-8750H (hexa-core, 9MB cache, up to 4.1GHz)</li>
+                                                <li>Graphics: Intel UHD Graphics 630; Nvidia GeForce GTX 1060 (6GB GDDR5)</li>
+                                                <li>RAM: 16GB DDR4 (2,666MHz)</li>
+                                                <li>Screen: 15.6-inch FHD (1,920 x 1,080) ComfyView IPS (144Hz refresh rate)</li>
+                                                <li>Storage: 256GB PCIe SSD</li>
+                                                <li>Ports: 1 x USB-C 3.1, 2 x USB 2.0, 1 x USB 3.0, HDMI 2.0, RJ-45 Ethernet, SD card reader, 3.5mm headphone jack</li>
+                                                <li>Connectivity: Intel 802.11ac Wi-Fi; Bluetooth</li>
+                                                <li>Camera: HD webcam (1,280 x 720) with 2 x mics</li>
+                                                <li>Weight: 5.95 pounds (2.7kg)</li>
+                                                <li>Size: 15.4 x 10.5 x 1.1 inches (39.1 x 26.7 x 2.8cm; W x D x H)</li>
+                                            </ul>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="close2nd" data-dismiss="modal">Close</button>
+                                            <button class="AddToCart">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Row one column 2-->
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <!-- creating a card -->
+                    <div class="card">
+                        <div class="card-body">
+                            <h>Dell Alienware Area-51M</h>
+                            <!-- Button trigger modal -->
+                            <button id="trigger" type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#img2">
+                                <img class="img-fluid" src="images/alienware-area-51m.png" class="img-thumbnail">
+                            </button>
+                            <button class="AddToCart">Add To Cart</button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="img2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title" id="exampleModalLabel">Dell Alienware Area-51M</h4>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img class="img-fluid" src="images/alienware-area-51m.png" class="img-thumbnail">
+                                            <ul>
+                                                <li>CPU. Intel Core i9-9900K 1.</li>
+                                                <li>GPU. NVIDIA GeForce RTX 2080 (Laptop) 4.</li>
+                                                <li>Display. 17.3”, Full HD (1920 x 1080), 144 Hz, IPS.</li>
+                                                <li>HDD/SSD. 1TB SSD PCIe NVMe.</li>
+                                                <li>RAM. 64GB DDR4, 2666 MHz.</li>
+                                                <li>OS.</li>
+                                                <li>Battery. 90Wh.</li>
+                                                <li>Body material. Magnesium alloy.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="close2nd" data-dismiss="modal">Close</button>
+                                            <button class="AddToCart">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Row one column three-->
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <!-- creating a card -->
+                    <div class="card">
+                        <div class="card-body">
+                            <h>Asus ROG Zephyrus S ultra slim</h>
+                            <!-- Button trigger modal -->
+                            <button id="trigger" type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#img3">
+                                <img class="img-fluid" src="images/Asus-ROG-Zephyus-S.png" class="img-thumbnail">
+                            </button>
+                            <button class="AddToCart">Add To Cart</button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="img3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title" id="exampleModalLabel">Asus ROG Zephyrus S ultra slim</h4>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img class="img-fluid" src="images/Asus-ROG-Zephyus-S.png" class="img-thumbnail">
+                                            <ul>
+                                                <li>Asus ROG Zephyrus S GX531GW specs:</li>
+                                                <li>CPU: Intel Core i7-8750H</li>
+                                                <li>RAM: 16GB 2666MHz</li>
+                                                <li>GPU: Nvidia RTX 2070 (Max-Q)</li>
+                                                <li>Display: 15.6in, 1920×1080, 144Hz IPS</li>
+                                                <li>Storage: 512GB NVMe SSD</li>
+                                                <li>Inputs / Outputs: 1x HDMI 2.0b, 2x USB2, 1x USB3.1 Gen 2, 1x USB-C, 1x USB-C with DisplayPort 1.2 and power delivery, 1x 3.5mm headphone and microphone combo jack</li>
+                                                <li>Dimensions: 360x268x16.15mm</li>
+                                                <li>Weight: 2.1kg</li>
+                                            </ul>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="close2nd" data-dismiss="modal">Close</button>
+                                            <button class="AddToCart">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Row one column 4-->
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <!-- creating a card -->
+                    <div class="card">
+                        <div class="card-body">
+                            <h>Lenovo Legion Y Series Y7000</h>
+                            <!-- Button trigger modal -->
+                            <button id="trigger" type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#img4">
+                                <img class="img-fluid" src="images/lenovo-legion-y.webp" class="img-thumbnail">
+                            </button>
+                            <button class="AddToCart">Add To Cart</button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="img4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title" id="exampleModalLabel">Lenovo Legion Y Series Y7000</h4>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img class="img-fluid" src="images/lenovo-legion-y.webp" class="img-thumbnail">
+                                            <ul>
+                                                <li>Up to 8th Generation Intel® Core™ i7-8750H.</li>
+                                                <li>Windows 10 Home.</li>
+                                                <li>15.6" FHD (1920 x 1080) IPS 60 Hz/144 Hz w/ optional G-SYNC™</li>
+                                                <li>Up to 32 GB DDR4 memory.</li>
+                                                <li>57 WHr, 3 Cells.</li>
+                                                <li>Starting at 4.8 lbs (2.2 kg)</li>
+                                            </ul>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="close2nd" data-dismiss="modal">Close</button>
+                                            <button class="AddToCart">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Row 2 column 1-->
+            <div class="row">
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <!-- creating a card -->
+                    <div class="card">
+                        <div class="card-body">
+                            <h>Samsung Notebook Flash</h>
+                            <!-- Button trigger modal -->
+                            <button id="trigger" type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#img5">
+                                <img class="img-fluid" src="images/samsung.png" class="img-thumbnail">
+                            </button>
+                            <button class="AddToCart">Add To Cart</button>
+
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="img5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title" id="exampleModalLabel">Samsung Notebook Flash</h4>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img class="img-fluid" src="images/samsung.png" class="img-thumbnail">
+                                            <ul>
+                                                <li>Processor Intel: Celeron N4000</li>
+                                                <li>Graphics adapter: Intel UHD Graphics 600</li>
+                                                <li>Memory: 4096 MB LPDDR4</li>
+                                                <li>Display: 13.3 inch 16:9, 1920 x 1080 pixel 166 PPI, LED, glossy: no</li>
+                                                <li>Storage: 64 GB eMMC Flash, 64 GB </li>
+                                                <li>Connections: 1 USB 2.0, 1 USB 3.0 / 3.1 Gen1, 1 HDMI, Audio Connections: 3.5mm, Card Reader: microSD, 1 Fingerprint Reader, USB-C</li>
+                                                <li>Networking: 802.11 a/b/g/n/ac (a/b/g/n/ac), Bluetooth 5.0</li>
+                                                <li>Size: height x width x depth (in mm): 17.8 x 322.6 x 218.4 ( = 0.7 x 12.7 x 8.6 in)</li>
+                                                <li>Battery: 39 Wh</li>
+                                                <li>Operating System: Microsoft Windows 10 Home 64 Bit</li>
+                                                <li>Camera: Webcam: HD</li>
+                                                <li>Additional features: Speakers: Stereo (1.5W x 2), Keyboard: Chiclet</li>
+                                                <li>Weight :1.4 kg ( = 49.38 oz / 3.09 pounds) ( = 0 oz / 0 pounds)</li>
+                                            </ul>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="close2nd" data-dismiss="modal">Close</button>
+                                            <button class="AddToCart">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Row 2 column 2-->
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <!-- creating a card -->
+                    <div class="card">
+                        <div class="card-body">
+                            <h>Xiaomi Mi Notebook Pro 15.6</h>
+                            <!-- Button trigger modal -->
+                            <button id="trigger" type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#img6">
+                                <img class="img-fluid" src="images/miBook.png" class="img-thumbnail">
+                            </button>
+                            <button class="AddToCart">Add To Cart</button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="img6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title" id="exampleModalLabel">Xiaomi Mi Notebook Pro Laptop 15.6</h4>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img class="img-fluid" src="images/miBook.png" class="img-thumbnail">
+                                            <ul>
+                                                <li>CPU: Core i5-8250U quad-core 3.4GHz</li>
+                                                <li>Graphics: Nvidia GeForce MX150; Intel UHD Graphics 620</li>
+                                                <li>RAM: 8GB DDR4</li>
+                                                <li>Screen: 15.6-inch 1920 x 1080 resolution display</li>
+                                                <li>Storage: 256GB Samsung PM961 SSD</li>
+                                                <li>Ports: 2 x USB Type-A, 2 x USB Type-C, 1 x HDMI, audio jack, microSD</li>
+                                                <li>Connectivity: 802.11ac Wi-Fi, Bluetooth 4.2</li>
+                                                <li>Camera: 1MP front webcam</li>
+                                                <li>Weight: 1.99kg</li>
+                                                <li>Size: 360 x 244 x 15mm (W x D x H)</li>
+                                                <li>Battery: 61Whr</li>
+                                            </ul>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="close2nd" data-dismiss="modal">Close</button>
+                                            <button class="AddToCart">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Row 2 column 3-->
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <!-- creating a card -->
+                    <div class="card">
+                        <div class="card-body">
+                            <h>Dell xps series xps 15</h>
+                            <!-- Button trigger modal -->
+                            <button id="trigger" type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#img7">
+                                <img class="img-fluid" src="images/dellxps.png" class="img-thumbnail">
+                            </button>
+                            <button class="AddToCart">Add To Cart</button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="img7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title" id="exampleModalLabel">Dell xps series xps 15</h4>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img class="img-fluid" src="images/dellxps.png" class="img-thumbnail">
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="close2nd" data-dismiss="modal">Close</button>
+                                            <button class="AddToCart
+                                            <i class=" fas fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Row 2 column 4-->
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <!-- creating a card -->
+                    <div class="card">
+                        <div class="card-body">
+                            <h>Acer Aspire series E1</h>
+                            <!-- Button trigger modal -->
+                            <button id="trigger" type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#img8">
+                                <img class="img-fluid" src="images/Acer Aspire E1.png" class="img-thumbnail">
+                            </button>
+                            <button class="AddToCart">Add To Cart</button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="img8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title" id="exampleModalLabel">Acer Aspire eries E1</h4>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img class="img-fluid" src="images/Acer Aspire E1.png" class="img-thumbnail">
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="close2nd" data-dismiss="modal">Close</button>
+                                            <button class="AddToCart">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Row 3-->
+            <div class="row">
+                <!--Row 3 column 1-->
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <!-- creating a card -->
+                    <div class="card">
+                        <div class="card-body">
+                            <h>Razer Blade 15</h>
+                            <!-- Button trigger modal -->
+                            <button id="trigger" type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#img9">
+                                <img class="img-fluid" src="images/razer-blade-15-og-non-mercury.png" class="img-thumbnail">
+                            </button>
+                            <button class="AddToCart">Add To Cart</button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="img9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title" id="exampleModalLabel">Razer Blade 15</h4>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img class="img-fluid" src="images/razer-blade-15-og-non-mercury.png" class="img-thumbnail">
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="close2nd" data-dismiss="modal">Close</button>
+                                            <button class="AddToCart">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Row 3 column 2-->
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <!-- creating a card -->
+                    <div class="card">
+                        <div class="card-body">
+                            <h>Apple MacBook Pro® 13</h>
+                            <!-- Button trigger modal -->
+                            <button id="trigger" type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#img10">
+                                <img class="img-fluid" src="images/macbookpro.png" class="img-thumbnail">
+                            </button>
+                            <button class="AddToCart">Add To Cart</button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="img10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title" id="exampleModalLabel">Apple MacBook Pro® 13</h4>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img class="img-fluid" src="images/macbookpro.png" class="img-thumbnail">
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="close2nd" data-dismiss="modal">Close</button>
+                                            <button class="AddToCart">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Free shipping for items over R10k </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Added gift for items over 20k</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>All products come with a 5 year warranty</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+
+        <script type="text/javascript" src="catalogue.js"></script>
+        <script type="text/javascript">
+        loadCatalogue()
+        </script>
+    </body>
+
+</html>

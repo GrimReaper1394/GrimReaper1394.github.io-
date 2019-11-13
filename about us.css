@@ -1,0 +1,54 @@
+/*Some universal css rules for text in Contact Us and About us*/
+h2 {
+    font-family: Arial;
+    font-style: italic;
+    text-align: right;
+    padding: 20px;
+}
+
+p {
+    font-family: Arial;
+    padding: 20px;
+}
+
+/*Padding section with contact us information in contact us html*/
+section {
+    padding: 20px;
+}
+
+/*applying color filters*/
+img {
+    filter: blur(20px);
+}
+
+img {
+    float: right;
+    height: 120px;
+    width: 140px;
+}
+
+/*Animating About us html*/
+.jumbotron {
+    background: url(images/background3.jpg) repeat 0 0;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    height: 200px;
+    padding-top: 120px;
+    box-sizing: border-box;
+    -webkit-animation: slide 20s linear infinite;
+}
+
+.jumbotron h1 {
+    font-family: sans-serif;
+}
+
+@-webkit-keyframes slide {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -400px 0;
+    }
+}
